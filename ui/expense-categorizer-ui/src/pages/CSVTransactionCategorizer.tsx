@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Loader2,  Upload } from "lucide-react";
+import { Loader2, Upload } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -50,7 +50,7 @@ export default function CSVTransactionCategorizer() {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
       setFile(event.target.files[0]);
-      setIsSampleFile(false);
+      setIsSampleFile(false); // Reset to indicate it's not the sample file
     }
   };
 
@@ -100,8 +100,6 @@ export default function CSVTransactionCategorizer() {
     }
   };
 
-
-
   return (
     <div>
       <Header />
@@ -118,11 +116,7 @@ export default function CSVTransactionCategorizer() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div
-              className={`grid ${
-                results.length > 0 ? "md:grid-cols-2" : "grid-cols-1"
-              } gap-6`}
-            >
+            <div className={`grid ${"grid-cols-1"} gap-6`}>
               <div className="space-y-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
@@ -187,35 +181,33 @@ export default function CSVTransactionCategorizer() {
               </div>
 
               {results.length > 0 && (
-                <div className="overflow-auto max-h-[400px] md:max-h-none">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead>Description</TableHead>
-                          <TableHead>Amount</TableHead>
-                          <TableHead>Category</TableHead>
+              <div className={`overflow-auto ${results.length > 10 ? 'max-h-[400px]' : ''}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="font-bold">Description</TableHead>
+                        <TableHead className="font-bold">Amount</TableHead>
+                        <TableHead className="font-bold">Category</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {results.map((transaction, index) => (
+                        <TableRow key={index}>
+                          <TableCell>{transaction.description}</TableCell>
+                          <TableCell>${transaction.amount.toFixed(2)}</TableCell>
+                          <TableCell>{transaction.category}</TableCell>
                         </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {results.map((transaction, index) => (
-                          <TableRow key={index}>
-                            <TableCell>{transaction.description}</TableCell>
-                            <TableCell>
-                              ${transaction.amount.toFixed(2)}
-                            </TableCell>
-                            <TableCell>{transaction.category}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </motion.div>
-                </div>
-              )}
+                      ))}
+                    </TableBody>
+                  </Table>
+                </motion.div>
+              </div>
+            )}
             </div>
           </CardContent>
         </Card>
