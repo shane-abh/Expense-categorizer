@@ -27,6 +27,11 @@ https://github.com/user-attachments/assets/549b49cb-d5bc-42f7-85c5-a4e2bb873285
 - Frontend: React, ShadCN
 - Testing: Mockito, JUnit
 
+## Architecture Overview
+![Group 19](https://github.com/user-attachments/assets/84b28a09-97e1-4599-9ce7-ec64886d68e3)
+
+
+
 ## Installation and Setup
 ### Prerequisites
 - Java: Version 17 or higher
