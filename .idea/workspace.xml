@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="092dfd24-0bf4-417d-9296-631ffdedd223" name="Changes" comment="Implemented FileController and unit tests">
+      <change afterPath="$PROJECT_DIR$/api/src/main/resources/expense_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/com/expensecategorizer/expenses/ExpenseFileControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/expensecategorizer/expenses/controller/ExpenseFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/expensecategorizer/expenses/controller/ExpenseFileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/expensecategorizer/expenses/model/ExpenseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/expensecategorizer/expenses/model/ExpenseResponse.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/api" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shane-abh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shane-abh/Expense-categorizer&quot;,
+    &quot;accountId&quot;: &quot;832b1211-616a-4300-a3d1-02d789c09fe0&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2oPLRgd2ddxeveW4kgo8GKJfTUU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ExpensesApplication.executor": "Run",
+    "JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnBadRequest_WhenFileIsEmpty.executor": "Run",
+    "JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully.executor": "Run",
+    "JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully_Multithreaded.executor": "Run",
+    "JUnit.ExpensesApplicationTests.executor": "Run",
+    "JUnit.ExpensesApplicationTests.getCategory_ShouldReturnCorrectCategory_WhenChatClientSucceeds.executor": "Debug",
+    "JUnit.ExpensesApplicationTests.getCategory_ShouldReturnUnknown_WhenChatClientThrowsException.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java Spring projects/expenses/expense-categorizer/api",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java Spring projects\expenses\expense-categorizer\api" />
+      <recent name="D:\Java Spring projects\expenses\expense-categorizer\src\main\resources" />
+      <recent name="D:\Java Spring projects\expenses\expense-categorizer\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnBadRequest_WhenFileIsEmpty">
+    <configuration name="ExpenseFileControllerTest.uploadExpenses_ShouldReturnBadRequest_WhenFileIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expensecategorizer.expenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expensecategorizer.expenses" />
+      <option name="MAIN_CLASS_NAME" value="com.expensecategorizer.expenses.ExpenseFileControllerTest" />
+      <option name="METHOD_NAME" value="uploadExpenses_ShouldReturnBadRequest_WhenFileIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseFileControllerTest.uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expensecategorizer.expenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expensecategorizer.expenses" />
+      <option name="MAIN_CLASS_NAME" value="com.expensecategorizer.expenses.ExpenseFileControllerTest" />
+      <option name="METHOD_NAME" value="uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseFileControllerTest.uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully_Multithreaded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expensecategorizer.expenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expensecategorizer.expenses" />
+      <option name="MAIN_CLASS_NAME" value="com.expensecategorizer.expenses.ExpenseFileControllerTest" />
+      <option name="METHOD_NAME" value="uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully_Multithreaded" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpensesApplicationTests.getCategory_ShouldReturnCorrectCategory_WhenChatClientSucceeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expensecategorizer.expenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expensecategorizer.expenses" />
+      <option name="MAIN_CLASS_NAME" value="com.expensecategorizer.expenses.ExpensesApplicationTests" />
+      <option name="METHOD_NAME" value="getCategory_ShouldReturnCorrectCategory_WhenChatClientSucceeds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpensesApplicationTests.getCategory_ShouldReturnUnknown_WhenChatClientThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expensecategorizer.expenses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expensecategorizer.expenses" />
+      <option name="MAIN_CLASS_NAME" value="com.expensecategorizer.expenses.ExpensesApplicationTests" />
+      <option name="METHOD_NAME" value="getCategory_ShouldReturnUnknown_WhenChatClientThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnBadRequest_WhenFileIsEmpty" />
+        <item itemvalue="JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully_Multithreaded" />
+        <item itemvalue="JUnit.ExpenseFileControllerTest.uploadExpenses_ShouldReturnOk_WhenFileIsUploadedSuccessfully" />
+        <item itemvalue="JUnit.ExpensesApplicationTests.getCategory_ShouldReturnUnknown_WhenChatClientThrowsException" />
+        <item itemvalue="JUnit.ExpensesApplicationTests.getCategory_ShouldReturnCorrectCategory_WhenChatClientSucceeds" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="092dfd24-0bf4-417d-9296-631ffdedd223" name="Changes" comment="" />
+      <created>1730766260142</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730766260142</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Implemented FileController and unit tests">
+      <option name="closed" value="true" />
+      <created>1730821972950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730821972950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Implemented FileController and unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented FileController and unit tests" />
+  </component>
+</project>
