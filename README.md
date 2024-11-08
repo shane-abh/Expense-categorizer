@@ -8,6 +8,13 @@ With Smart Finance, you can categorize expenses individually or in bulk via a si
 
 ![image](https://github.com/user-attachments/assets/82b4feaf-e392-4cd0-94f4-73752debdce6)
 
+## Demo
+
+
+https://github.com/user-attachments/assets/549b49cb-d5bc-42f7-85c5-a4e2bb873285
+
+
+
 
 ## Features
 - Single Expense Categorization: Enter expense descriptions and amounts to categorize expenses one by one.
