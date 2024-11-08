@@ -6,6 +6,9 @@ Smart Finance addresses a common problem: categorizing expenses based on descrip
 
 With Smart Finance, you can categorize expenses individually or in bulk via a simple API. This tool is ideal for users and businesses looking to streamline expense management through AI-driven categorization. The backend is built with Java Spring, integrating Spring AI for the machine learning component, while the frontend uses React with ShadCN for a seamless user experience.
 
+![image](https://github.com/user-attachments/assets/82b4feaf-e392-4cd0-94f4-73752debdce6)
+
+
 ## Features
 - Single Expense Categorization: Enter expense descriptions and amounts to categorize expenses one by one.
 - Bulk Categorization: Upload a CSV file with multiple expenses for batch categorization, saving time and ensuring consistency.
@@ -39,16 +42,13 @@ cd api
 #### Configure the application.properties:
 
 ```bash
-spring.datasource.url=jdbc:postgresql://localhost:5432/expense_db
-spring.datasource.username=yourUsername
-spring.datasource.password=yourPassword
-spring.jpa.hibernate.ddl-auto=update
+spring.application.name=expenses
+spring.ai.ollama.chat.model=llama3.2
 ```
 
 #### Build and Run the API: Use Maven to build and start the Spring Boot application.
 
 ```bash
-
 mvn clean install
 mvn spring-boot:run
 The API server should now be running at http://localhost:8080.
@@ -66,8 +66,6 @@ Install Dependencies: Use npm to install the required packages for the React app
 ```bash
 npm install
 ```
-
-
 
 4. Testing (Optional)
 Backend Tests: Run unit and integration tests using Maven:
